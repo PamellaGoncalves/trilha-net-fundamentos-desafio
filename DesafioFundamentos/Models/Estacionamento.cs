@@ -20,6 +20,7 @@ namespace DesafioFundamentos.Models
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string placa = Console.ReadLine();
             veiculos.Add(placa);
+            Console.Write($"Veículo com a placa {placa} adicionado com sucesso!");
         }
 
         public void RemoverVeiculo()
@@ -45,11 +46,11 @@ namespace DesafioFundamentos.Models
                 // Implementado!
                  veiculos.Remove(placa);
 
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+                Console.Write($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
             }
             else
             {
-                Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
+                Console.Write("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
             }
         }
 
@@ -68,7 +69,7 @@ namespace DesafioFundamentos.Models
             }
             else
             {
-                Console.WriteLine("Não há veículos estacionados.");
+                Console.Write("Não há veículos estacionados.");
             }
         }
     }
