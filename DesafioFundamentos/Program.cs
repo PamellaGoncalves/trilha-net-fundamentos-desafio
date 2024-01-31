@@ -1,4 +1,4 @@
-﻿using DesafioFundamentos.Models;
+using DesafioFundamentos.Models;
 
 // Coloca o encoding para UTF8 para exibir acentuação
 Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -29,7 +29,10 @@ while (exibirMenu)
     Console.WriteLine("3 - Listar veículos");
     Console.WriteLine("4 - Encerrar");
 
-    switch (Console.ReadLine())
+    var opcaoEscolhida = Console.ReadLine();
+    Console.Clear();
+
+    switch (opcaoEscolhida)
     {
         case "1":
             es.AdicionarVeiculo();
